@@ -103,8 +103,8 @@ page-mathjax: false
 # Friends
 friends: [
     {
-    #     title: "hux",
-    #     href: "http://huangxuan.me"
+         title: "huangxuan",
+         href: "https://huangxuan.me/"
     # },{
     }
 ]
