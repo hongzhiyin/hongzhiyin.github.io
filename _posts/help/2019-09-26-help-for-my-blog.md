@@ -30,7 +30,7 @@ tags:
 
 参考文档：http://jekyllcn.com/docs/frontmatter
 
-```
+```c
 layout:        post                 // 使用 _layouts 目录下的模板文件 post
 title:         "..."                // 标题
 subtitle:      "..."                // 副标题
