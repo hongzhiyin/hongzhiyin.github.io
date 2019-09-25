@@ -28,7 +28,7 @@ tags:
 
 ### YAML 头信息
 
-参考文档：http://jekyllcn.com/docs/frontmatter
+参考文档：[http://jekyllcn.com/docs/frontmatter](http://jekyllcn.com/docs/frontmatter) 
 
 ```c
 layout:        post                 // 使用 _layouts 目录下的模板文件 post
