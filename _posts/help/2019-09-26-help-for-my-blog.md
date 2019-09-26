@@ -24,7 +24,7 @@ tags:
 2019-09-26-help-for-my-blog.md
 ```
 
-
+保存在 _posts 目录下，可建文件夹。
 
 ### YAML 头信息
 
