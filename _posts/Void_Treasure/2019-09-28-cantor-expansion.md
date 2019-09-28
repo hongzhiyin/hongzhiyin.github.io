@@ -3,6 +3,7 @@ layout:        post
 title:         "康托展开 & 逆康托展开"
 subtitle:      "Cantor Expansion & Reverse Cantor Expansion"
 author:        "hongzhiyin"
+header-style:  text
 mathjax:       true
 catalog:       true
 tags:
@@ -20,7 +21,7 @@ tags:
 
 1. 问题可转化为：有多少个比当前全排列 $P$ 字典序小的全排列
 2. 枚举 $i$ ，求有多少个全排列 $Q_i$ ，它们的前 $i-1$ 个数与 $P$ 相同，且字典序比 $P$ 小
-3. 对于 $Q_i$ ，它的第 $i$ 位要与 $P$ 不同，则只能在 $P$ 的 $i+1$ 到 $n$ 位中，选择字典序比 $P[i]$ 小的数
+3. 对于 $Q_i$ ，其第 $i$ 位要与 $P$ 不同，则只能在 $P$ 的 $i+1$ 到 $n$ 位中，选择字典序比 $P[i]$ 小的数
 4. 当选择好第 $i$ 位的数后，剩余 $n-i$ 个数即可任意排列，方案即为 $(n-i)!$
 5. 最后将求得总数 $+ 1$ ，即为 $P$ 的排名（从 $1$ 开始）
 
