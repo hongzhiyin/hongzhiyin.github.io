@@ -1,9 +1,9 @@
 ---
 layout:        post
 title:         "平凡的代价"
-subtitle:      "the price of ordinariness"
+subtitle:      "The price of ordinariness"
 author:        "hongzhiyin"
-header-img:    "img/kiana_kaslana.jpg"
+header-img:    "img/kiana_kaslana_cg.jpg"
 header-mask:   0.3
 tags:
   - 量子之海
