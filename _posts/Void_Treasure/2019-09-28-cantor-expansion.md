@@ -35,8 +35,8 @@ int Cantor_Expansion(int a[], int n) {
     seg.build(1, n, 1);
     int res = 1, jc = 1;
     per(i, 1, n+1) {
-        res = (res + 1ll * jc * seg.sum(a[i], 1, n, 1)) % MOD;
-        jc = 1ll * jc * (n - i + 1) % MOD;
+        res += jc * seg.sum(a[i], 1, n, 1);
+        jc *= n - i + 1;
         seg.upd(a[i], 1, n, 1);
     }
     return res;
@@ -74,5 +74,47 @@ void Reverse_Cantor_Expansion(int x, int n, int b[]) {
         seg.upd(b[i], 1, n, 1);
     }
 }
+```
+
+
+
+---
+
+
+
+### 线段树部分
+
+```c++
+#define ls rt << 1
+#define rs rt << 1 | 1
+#define lson l, m, ls
+#define rson m + 1, r, rs
+int t[N<<2];
+struct Seg {
+    void build(int l, int r, int rt) {
+        if (l == r) { t[rt] = 0; return ; }
+        int m = (l + r) >> 1;
+        build(lson); build(rson);
+        t[rt] = t[ls] + t[rs];
+    }
+    int qry(int y, int l, int r, int rt) {
+        if (l == r) return l;
+        int m = (l + r) >> 1, len = m - l + 1;
+        if (len - t[ls] >= y) return qry(y, lson);
+        return qry(y - (len - t[ls]), rson);
+    }
+    void upd(int p, int l, int r, int rt) {
+        if (l == r) { t[rt]++; return ; }
+        int m = (l + r) >> 1;
+        if (p <= m) upd(p, lson); else upd(p, rson);
+        t[rt] = t[ls] + t[rs];
+    }
+    int sum(int p, int l, int r, int rt) {
+        if (l == r) return t[rt];
+        int m = (l + r) >> 1;
+        if (p <= m) return sum(p, lson);
+        return t[ls] + sum(p, rson);
+    }
+} seg;
 ```
 
