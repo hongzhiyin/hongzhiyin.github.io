@@ -17,14 +17,15 @@ tags:
 当 $a,\ m \in \mathbb{Z}$ ，且 $gcd(a,\ m) = 1$ 时，有：
 
 $$
-a^{\varphi(m)}\equiv 1\ (mod\ m)
+\Large a^{\varphi(m)}\equiv 1\ (mod\ m)
 $$
 
 则：
 
 $$
-a^b\equiv a^{b\ mod\ \varphi(m)}\ (mod\ m)
+\Large a^b\equiv a^{b\ mod\ \varphi(m)}\ (mod\ m)
 $$
+
 
 
 ### 扩展欧拉定理
@@ -32,6 +33,7 @@ $$
 当 $a,\ m \in \mathbb{Z}$ 时，有：
 
 $$
+\Large 
 a^b \equiv
 \begin{cases}
 a ^ b & b < \varphi(m) \\
@@ -39,6 +41,7 @@ a^{b\ mod\ \varphi(m)\ +\ \varphi(m)} & b \ge \varphi(m)
 \end{cases}
 (mod\ m)
 $$
+
 
 
 ```c++
