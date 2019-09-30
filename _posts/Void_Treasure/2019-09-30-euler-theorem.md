@@ -14,7 +14,7 @@ tags:
 
 ### 欧拉定理
 
-当 $a,\ m \in \Z$ ，且 $gcd(a,\ m) = 1$ 时，有：
+当 $a,\ m \in \mathbb{Z}$ ，且 $gcd(a,\ m) = 1$ 时，有：
 $$
 a^{\varphi(m)}\equiv 1\ (mod\ m)
 $$
@@ -26,7 +26,7 @@ $$
 
 ### 扩展欧拉定理
 
-当 $a,\ m \in \Z$ 时，有：
+当 $a,\ m \in \mathbb{Z}$ 时，有：
 $$
 a^b \equiv
 \begin{cases}
