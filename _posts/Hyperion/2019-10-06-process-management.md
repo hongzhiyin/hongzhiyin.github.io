@@ -7,7 +7,6 @@ header-style:  text
 catalog:       true
 tags:
   - 休伯利安
-  - 帮助
 ---
 
 1. 进程太复杂时，分解进程为更多的子进程。
