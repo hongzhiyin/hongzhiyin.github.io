@@ -4,6 +4,7 @@ title:         "成就系统"
 subtitle:      "Achievement System"
 author:        "hongzhiyin"
 header-style:  text
+mathjax:       true
 catalog:       true
 tags:
   - 休伯利安
