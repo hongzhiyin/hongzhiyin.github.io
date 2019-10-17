@@ -14,15 +14,11 @@ tags:
 
 ## 运行
 
-- CCPC 秦皇岛 补题
-  - [x] F
-  - [x] J
-  - [x] I
-  - [x] A
-  - [x] K
-  - [x] E
-
-
+- CF 补题
+  - [ ] F
+  - [ ] write post
+- 度限制最小生成树
+- WQS 二分
 
 
 
