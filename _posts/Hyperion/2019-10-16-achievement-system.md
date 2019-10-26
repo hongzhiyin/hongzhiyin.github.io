@@ -14,9 +14,9 @@ tags:
 
 ### 【 Specialist 】
 
-(0/5) 参加并补全 $5$ 场 $Codeforces$ 现场赛
+(1/5) 参加并补全 $5$ 场 $Codeforces$ 现场赛
 
-![](/img/process/process-00.jpg)
+![](/img/process/process-20.jpg)
 
 
 
