@@ -2,7 +2,7 @@
 layout:        post
 title:         "2-SAT 问题"
 subtitle:      "2-SAT Problem"
-author:        "hongzhiyin"
+authlor:        "hongzhiyin"
 header-style:  text
 mathjax:       true
 catalog:       true
@@ -26,19 +26,19 @@ $[\ SAT\ ]$ ： $Satisfiability$ 的缩写，意为可满足性。
 
 设当前有 $3$ 个布尔变量 $a, b, c$ ， $3$ 个约束条件：
 
-1. $\neg a\or b$ 
-2. $a \or b$ 
-3. $\neg a\or \neg b$ 
+1. $\neg a\lor b$ 
+2. $a \lor b$ 
+3. $\neg a\lor \neg b$ 
 
 要求对 $a, b, c$ 赋值，满足 $3$ 个约束条件，即：
 
-$(\neg a\or b)\and(a\or b)\and(\neg a\or \neg b) = 1$
+$(\neg a\lor b)\land(a\lor b)\land(\neg a\lor \neg b) = 1$
 
 ## 求解
 
 设 $n$ 个变量编号从 $1$ 到 $n$ ， $n$ 个变量的反值编号从 $n+1$ 到 $2n$ ，
 
-对于 $(a\or b)$ ，转换为 $(\neg a\to b)\and (\neg b\to a)$ ，
+对于 $(a\lor b)$ ，转换为 $(\neg a\to b)\land (\neg b\to a)$ ，
 
 对于每个蕴含式，连接相应的边。
 
@@ -81,7 +81,7 @@ struct two_SAT {
     void SCC(int u) {
         dfn[u] = low[u] = ++no;
         S[top++] = u;
-        for (auto v : e[u]) {
+        flor (auto v : e[u]) {
             if (!dfn[v]) {
                 SCC(v);
                 low[u] = min(low[u], low[v]);
