@@ -2,7 +2,7 @@
 layout:        post
 title:         "2-SAT 问题"
 subtitle:      "2-SAT Problem"
-authlor:        "hongzhiyin"
+authlor:       "hongzhiyin"
 header-style:  text
 mathjax:       true
 catalog:       true
