@@ -26,9 +26,9 @@ tags:
 
 ### 【 Virtual Specialist 】
 
-(1/5) 参加并补全 $5$ 场 $Codeforces$ 虚拟参赛
+(2/5) 参加并补全 $5$ 场 $Codeforces$ 虚拟参赛
 
-![](/img/process/process-20.jpg)
+![](/img/process/process-40.jpg)
 
 
 
