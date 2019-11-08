@@ -74,10 +74,6 @@ tags:
 
 
 
----
-
-
-
 ## 专业课程
 
 **计算机应用技术**
@@ -92,8 +88,20 @@ tags:
 - [ ] &nbsp; 研究生英语综合教程上
 - [ ] &nbsp; 研究生英语综合教程下
 
+
+
 ## 数据结构知识与算法基础
 
-- [ ] &nbsp; 【 3 / 50 】 Codeforces Round 50 场 
-  ![](/img/process/process-10.png)
+- [ ] &nbsp; 【 3 / 50 】 Codeforces Round 50 场 ![](/img/process/process-05.png)
 
+
+
+## 精通一门面向对象的编程语言
+
+
+
+## 计算机体系结构
+
+
+
+## 操作系统原理
