@@ -94,7 +94,6 @@ tags:
 
 ## 数据结构知识与算法基础
 
-- [ ] &nbsp; 【 3 / 50 】 Codeforces Round 50 场 ![](/img/process/process-10.png)
-- [ ] &nbsp; 【 3 / 50 】 Codeforces Round 50 场 ![](/img/process/process-10.png)
-
+- [ ] &nbsp; 【 3 / 50 】 Codeforces Round 50 场 
+  ![](/img/process/process-10.png)
 
