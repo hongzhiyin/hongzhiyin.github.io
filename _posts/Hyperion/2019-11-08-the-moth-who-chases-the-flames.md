@@ -80,16 +80,21 @@ tags:
 
 ## 专业课程
 
-**计算机技术**
+**计算机应用技术**
 
 
 
 **英语**
 
+
 - [x] &nbsp; CET - 4
 - [ ] &nbsp; CET - 6
-
-
+- [ ] &nbsp; 研究生英语综合教程上
+- [ ] &nbsp; 研究生英语综合教程下
 
 ## 数据结构知识与算法基础
+
+- [ ] &nbsp; 【 3 / 50 】 Codeforces Round 50 场
+![](/img/process/process-10.png)
+
 
