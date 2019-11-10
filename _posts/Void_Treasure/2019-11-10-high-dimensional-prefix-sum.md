@@ -91,7 +91,7 @@ if (x | mask == mask) pre[mask] += pre[x];
 可看作是有 $n$ 个维度，每个维度的值域只有 $0$ 和 $1$ 的高维前缀和
 
 ```c++
-rep(i, 0, n) rep(mask, 0, 1 << n) if (mask >> i & 1)
-    pre[mask] += pre[mask ^ 1];
+rep(i, 0, n) rep(mask, 1, 1 << n) if (mask >> i & 1)
+    pre[mask] += pre[mask ^ 1 << i];
 ```
 
