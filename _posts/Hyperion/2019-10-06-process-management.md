@@ -14,8 +14,14 @@ tags:
 
 ## 运行
 
+- 补题 CF 1234 F
+  - [ ] &nbsp; 状压 DP
 
-
+- 用网页解决一切
+  - [ ] &nbsp; html
+  - [ ] &nbsp; css
+  - [ ] &nbsp; JavaScript
+  - [ ] &nbsp; WebGL
 
 
 ## 就绪
