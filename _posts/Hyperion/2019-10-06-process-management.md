@@ -15,8 +15,9 @@ tags:
 ## 运行
 
 - 补题 CF 1234 F
-  - [ ] &nbsp; 状压 DP
-
+  - [x] &nbsp; 状压 DP
+- [ ] &nbsp; 写文档
+  
 - 用网页解决一切
   - [ ] &nbsp; html
   - [ ] &nbsp; css
