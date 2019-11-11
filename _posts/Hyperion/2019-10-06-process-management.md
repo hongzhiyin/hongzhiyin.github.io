@@ -14,13 +14,12 @@ tags:
 
 ## 运行
 
-- CF 914 E 文档
-
 - 用网页解决一切
   - [ ] &nbsp; html
   - [ ] &nbsp; css
   - [ ] &nbsp; JavaScript
   - [ ] &nbsp; WebGL
+
 
 
 ## 就绪
