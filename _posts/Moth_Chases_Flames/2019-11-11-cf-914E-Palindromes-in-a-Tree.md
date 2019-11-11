@@ -77,10 +77,7 @@ ll cnt[2000000], ans[N];
 
 struct Centroid_Decomposition {
     int vis[N], sz[N];
-    void init(int n) {
-        memset(vis, 0, sizeof(vis[0]) * (n+1));
-        memset(cnt, 0, sizeof(cnt[0]) * (n+1));
-    }
+    void init(int n) { memset(vis, 0, sizeof(vis[0]) * (n+1)); }
     void Gravity(int u, int f, int n, int &rt) {
         sz[u] = 1;
         for (auto v : e[u]) if (!vis[v] && v != f) { Gravity(v, u, n, rt); sz[u] += sz[v]; }
@@ -129,6 +126,7 @@ struct Centroid_Decomposition {
 void Init() {
     scanf("%d", &n);
     memset(ans, 0, sizeof(ans));
+    memset(cnt, 0, sizeof(cnt));
     rep(i, 1, n+1) e[i].clear();
     rep(i, 1, n) {
         int u, v; scanf("%d%d", &u, &v);
