@@ -14,11 +14,8 @@ tags:
 
 ## 运行
 
-- 用网页解决一切
-  - [ ] &nbsp; html
-  - [ ] &nbsp; css
-  - [ ] &nbsp; JavaScript
-  - [ ] &nbsp; WebGL
+- 《 Vim 实用技巧 》
+  - “ . ” 命令
 
 
 
