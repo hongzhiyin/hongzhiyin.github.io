@@ -14,7 +14,9 @@ tags:
 
 **例 1**
 
-`x` 命令删除光标下的字符， `.` 命令重复上次修改。
+`x` 命令删除光标下的字符，
+
+`.` 命令重复上次修改。
 
 | 按键操作 | 缓冲区内容                                                   |
 | -------- | ------------------------------------------------------------ |
@@ -27,7 +29,7 @@ tags:
 
 **例 2**
 
-`dd` 命令删除一整行， `.` 命令重复上次修改。
+`dd` 命令删除一整行。
 
 | 按键操作 | 缓冲区内容                                                   |
 | -------- | ------------------------------------------------------------ |
@@ -39,7 +41,9 @@ tags:
 
 **例 3**
 
-`>G` 命令增加从当前行到文档末尾处的缩进层级， `.` 命令重复上次修改。
+`>G` 命令增加从当前行到文档末尾处的缩进层级，
+
+`j` 命令使光标下移一行。
 
 | 按键操作 | 缓冲区内容                                                   |
 | -------- | ------------------------------------------------------------ |
@@ -54,6 +58,10 @@ tags:
 
 **例 1**
 
+在每行的结尾添加一个分号。
+
+`A` 命令将光标移到行尾，进入插入模式。
+
 | 按键操作  | 缓冲区内容                                                   |
 | --------- | ------------------------------------------------------------ |
 | {start}   | <span style="color:white;background:black;">v</span>ar foo = 1<br />var bar = 'a'<br />var foobar = foo + bar |
@@ -65,4 +73,46 @@ tags:
 
 
 ## 技巧 3 以退为进
+
+**例 1**
+
+在 `+` 字符前后各添加一个空格。
+
+`f{char}` 命令查找行内下一处指定字符出现的位置，将光标移到该字符位置，
+
+`s` 命令删除光标下的字符，进入插入模式，
+
+`;` 命令重复查找上次 `f` 命令所查找的字符。
+
+| 按键操作    | 缓冲区内容                                                   |
+| ----------- | ------------------------------------------------------------ |
+| {start}     | <span style="color:white;background:black;">v</span>ar foo = "method("+argument1+","+argument2+")"; |
+| `f+`        | var foo = "method("<span style="color:white;background:black;">+</span>argument1+","+argument2+")"; |
+| `s + <Esc>` | var foo = "method(" +<span style="color:white;background:black;">&ensp;</span>argument1+","+argument2+")"; |
+| `;`         | var foo = "method(" + argument1<span style="color:white;background:black;">+</span>","+argument2+")"; |
+| `.`         | var foo = "method(" + argument1 +<span style="color:white;background:black;">&ensp;</span>","+argument2+")"; |
+| `;.`        | var foo = "method(" + argument1 + "," +<span style="color:white;background:black;">&ensp;</span>argument2+")"; |
+| `;.`        | var foo = "method(" + argument1 + "," + argument2 +<span style="color:white;background:black;">&ensp;</span>")"; |
+
+
+
+## 技巧 4 执行、重复、回退
+
+**可重复的操作及如何回退**
+
+`t{char}` 命令查找行内下一处指定字符出现的位置，将光标移到该字符位置前。
+
+| 目的                     | 操作                    | 重复 | 回退 |
+| ------------------------ | ----------------------- | ---- | ---- |
+| 做出一个修改             | {edit}                  | `.`  | `u`  |
+| 在行内查找下一个指定字符 | `f{char}` / `t{char}`   | `;`  | `,`  |
+| 在行内查找上一个指定字符 | `F{char}` / `T{char}`   | `;`  | `,`  |
+| 在文档中查找下一处匹配项 | `/pattern<CR>`          | `n`  | `N`  |
+| 在文档中查找上一处匹配项 | `?pattern<CR>`          | `n`  | `N`  |
+| 执行替换                 | `:s/target/replacement` | `&`  | `u`  |
+| 执行一系列修改           | `qx{changes}q`          | `@x` | `u`  |
+
+
+
+## 技巧 5 查找并手动替换
 
