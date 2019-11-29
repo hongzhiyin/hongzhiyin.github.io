@@ -12,7 +12,7 @@ tags:
 
 ## 技巧 1 结识 . 命令
 
-**例 1**
+**重复删除光标下的字符**
 
 `x` 命令删除光标下的字符，
 
@@ -27,7 +27,7 @@ tags:
 
 
 
-**例 2**
+**重复删除一整行**
 
 `dd` 命令删除一整行。
 
@@ -39,7 +39,7 @@ tags:
 
 
 
-**例 3**
+**重复增加从当前行到文档末尾处的缩进层级**
 
 `>G` 命令增加从当前行到文档末尾处的缩进层级，
 
@@ -56,9 +56,7 @@ tags:
 
 ## 技巧 2 不要自我重复
 
-**例 1**
-
-在每行的结尾添加一个分号。
+**在每行的结尾添加一个分号**
 
 `A` 命令将光标移到行尾，进入插入模式。
 
@@ -74,9 +72,7 @@ tags:
 
 ## 技巧 3 以退为进
 
-**例 1**
-
-在 `+` 字符前后各添加一个空格。
+**在 '+' 字符前后各添加一个空格**
 
 `f{char}` 命令查找行内下一处指定字符出现的位置，将光标移到该字符位置，
 
@@ -102,6 +98,8 @@ tags:
 
 `t{char}` 命令查找行内下一处指定字符出现的位置，将光标移到该字符位置前。
 
+`pattern` 、 `target` 、 `replacement` 皆替换为实际查找或替换的词
+
 | 目的                     | 操作                    | 重复 | 回退 |
 | ------------------------ | ----------------------- | ---- | ---- |
 | 做出一个修改             | {edit}                  | `.`  | `u`  |
@@ -115,4 +113,30 @@ tags:
 
 
 ## 技巧 5 查找并手动替换
+
+**替换部分单词**
+
+`:se hls` 高亮当前匹配项，
+
+`:se nohls` 取消高亮当前匹配项，
+
+`*` 命令查找当前光标下的单词，并跳到下一个匹配项上，
+
+`cw` 命令删除光标下的单词，进入插入模式。
+
+| 按键操作      | 缓冲区内容                                                   |
+| ------------- | ------------------------------------------------------------ |
+| {start}       | ...We' re waiting for content before the site can go live...<br />...If you are <span style="color:white;background:black;">c</span>ontent with this, let's go ahead with it...<br />...We'll launch as soon as we have the content... |
+| `*`           | ...We' re waiting for <span style="color:black;background:grey;">content</span> before the site can go live...<br />...If you are <span style="color:black;background:grey;">content</span> with this, let's go ahead with it...<br />...We'll launch as soon as we have the <span style="color:white;background:black;">c</span><span style="color:black;background:grey;">ontent</span>... |
+| `cwcopy<Esc>` | ...We' re waiting for <span style="color:black;background:grey;">content</span> before the site can go live...<br />...If you are <span style="color:black;background:grey;">content</span> with this, let's go ahead with it...<br />...We'll launch as soon as we have the cop<span style="color:white;background:black;">y</span>... |
+| `n`           | ...We' re waiting for <span style="color:white;background:black;">c</span><span style="color:black;background:grey;">ontent</span> before the site can go live...<br />...If you are <span style="color:black;background:grey;">content</span> with this, let's go ahead with it...<br />...We'll launch as soon as we have the copy... |
+| `.`           | ...We' re waiting for cop<span style="color:white;background:black;">y</span> before the site can go live...<br />...If you are <span style="color:black;background:grey;">content</span> with this, let's go ahead with it...<br />...We'll launch as soon as we have the copy... |
+
+
+
+## 技巧 6 结识 . 范式
+
+理想模式：用一键移动，另一键执行
+
+
 
