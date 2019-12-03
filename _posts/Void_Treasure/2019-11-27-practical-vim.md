@@ -203,3 +203,52 @@ tags:
 | `cW.news<Esc>` | .blog, .news { background-image: url(/sprite.png); }<br />.blog { background-position: 0px 0px }<br />.new<span style="color:white;background:black;">s</span> { background-position: 0px 0px } |
 | `180<C-x>`     | .blog, .news { background-image: url(/sprite.png); }<br />.blog { background-position: 0px 0px }<br />.news { background-position: -18<span style="color:white;background:black;">0</span>px 0px } |
 
+
+
+## 技巧 11 能够重复，就别用次数
+
+执行、重复、回退。
+
+只在必要时使用次数。
+
+
+
+## 技巧 12 双剑合璧，天下无敌
+
+$$
+\Large 操作符 + 动作命令 = 操作
+$$
+
+**操作符**
+
+| 命令 | 用途       |
+| ---- | ---------- |
+| `c`  | 修改       |
+| `d`  | 删除       |
+| `y`  | 复制       |
+| `g~` | 反转大小写 |
+| `gu` | 转换为小写 |
+| `gU` | 转换为大写 |
+| `>`  | 增加缩进   |
+| `<`  | 减小缩进   |
+| `=`  | 自动缩进   |
+
+当一个操作符命令被连续调用两次时，它会作用于当前行。
+
+**动作命令**
+
+`l` 一个字符。
+
+`w` 从光标开始往后一个单词。
+
+`aw` 光标当前所属的一个完整单词。
+
+`ap` 一整个段落。
+
+`G` 从光标位置到文件结尾的所有内容。
+
+**自动缩进整个文件**
+
+`gg=G`
+
+`gg` 跳到文件开头， `=G` 自动缩进从光标位置到文件结尾的所有内容。
